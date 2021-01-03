@@ -1,4 +1,64 @@
+* {
+    box-sizing: border-box;
+}
 html, body {
     margin: 0;
     padding: 0;
+   
 }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    /* text-align: center; */
+       
+    
+    
+}
+
+/* goes both ways when centering the text! */
+.box {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    flex-basis: 500px;
+    flex-grow: 1; /* taking the extra space for all items*/
+    
+}
+
+h2 {
+    /* centering the headline text  */
+    display: flex;
+    align-self: center;
+     
+}
+.action {
+    background-color: dodgerblue;
+  
+
+}
+/* giving this two genres a 10 times growing rate! */
+.thriller {
+    background-color: rgb(190, 178, 178);
+    flex-grow: 10;
+}
+
+.comedy {
+    background-color: rgb(255, 214, 30);
+    flex-grow: 10;
+}
+
+.horror {
+    background-color: black;
+    color: white;
+}
+
+.drama {
+    background-color: darkgrey;
+}
+
+.romance {
+    background-color: red;
+}
+
